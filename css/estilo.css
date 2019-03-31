@@ -1,0 +1,72 @@
+/* Limpando config padrão de todos os seletores */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Trebuchet Ms", helvetica, sans-serif;
+
+}
+
+
+
+/* Div Menu Principal */
+#menuPrincipal{
+    line-height: 4em;
+    margin: 0;
+    width: 95%;
+    border: 1px solid orange;
+    left: 25px;
+    position: fixed;
+    top: 1px;
+    z-index: 1;
+    background-color: aqua;
+   
+}
+
+/* Inicio Div Principal */
+#container{
+    border: 1px solid red;
+    width: 95%;
+    margin: 70px 0 30px 25px; 
+    /* margin: 25px; */
+    clear: both;/* Limpa o fluxo do float*/
+}
+
+
+/* Div Menu de Redes Social - Contato */
+#menuContato{
+    border: 1px solid black;
+    width: 10%;
+    position: fixed;
+    top: 50%;
+}
+
+/* Div conteúdo  */
+#Conteudo{
+    margin: 0 0.5em;
+    border: 1px solid black;
+    float: right;
+    width: 87%;
+}
+
+/* Div Rodapé */
+#rodape{
+    clear: both;/* Limpa o fluxo do float*/
+    width: 95%;
+    border: 1px solid black;
+    text-align: center;
+    position: fixed;
+    top: 96%;
+    line-height: 1.5em;
+    z-index: 1;
+    background-color: aqua;
+
+}
+/* Fim Div Principal */
+
+
+/* Classes */
+.clear{
+    clear: both;
+}
