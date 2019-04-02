@@ -55,7 +55,6 @@ ul#navTop a:hover{
 
 /* Inicio Div Principal */
 #container{
-    border: 1px solid red;
     width: 95%;
     margin: 70px 0 30px 25px; 
     /* margin: 25px; */
@@ -83,14 +82,13 @@ ul#navTop a:hover{
 #rodape{
     clear: both;/* Limpa o fluxo do float*/
     width: 95%;
-    border: 1px solid black;
     text-align: center;
+    color: #fdf6e3;
+    font-size: 0.8em;
     position: fixed;
     top: 96%;
     line-height: 1.5em;
     z-index: 1;
-    background-color: aqua;
-
 }
 /* Fim Div Principal */
 
