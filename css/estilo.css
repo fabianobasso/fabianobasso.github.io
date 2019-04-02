@@ -5,24 +5,53 @@
 }
 body{
     font-family: "Trebuchet Ms", helvetica, sans-serif;
+    background-color: #002b36;
 
 }
 
 
 
-/* Div Menu Principal */
-#menuPrincipal{
-    line-height: 4em;
+/* INICIO -- Div Menu Principal */
+#mainMenu{
     margin: 0;
     width: 95%;
-    border: 1px solid orange;
     left: 25px;
     position: fixed;
     top: 1px;
-    z-index: 1;
-    background-color: aqua;
-   
+    z-index: 1;   
 }
+#navHome{
+    width: 40%;
+    margin: 0 auto;
+}
+ul#navTop{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    background-color: #268bd2;
+    float: left
+}
+ul#navTop li{
+    float: left
+}
+ul#navTop a{
+    display: block;
+    text-decoration: none;
+    color:	#fdf6e3;
+    padding: 0 2em;
+    line-height: 3em;
+    background: url(../img/separador.png) repeat-y left top;
+}
+ul#navTop a:hover{
+    background-color: #6c71c4;
+}
+#navTop .first a{
+    background: none;
+}
+    
+/* FIM -- Div Menu Principal */
+
 
 /* Inicio Div Principal */
 #container{
