@@ -5,36 +5,37 @@
 }
 body{
     font-family: "Trebuchet Ms", helvetica, sans-serif;
-    background-color: #151515;
-
+    background: #696969 url(../img/Background.png) no-repeat fixed;
+    z-index: 1;
+    
 }
-
-
-
 /* INICIO -- Div Menu Principal */
+
 #mainMenu{
     margin: 0;
-    width: 95%;
-    left: 25px;
+    width: 800px;
+    left: 550px;
     position: fixed;
     top: 1px;
     z-index: 1;   
 }
 #navHome{
-    width: 40%;
-    margin: 0 auto;
+    width: 600px;
+    margin: 30px auto;
 }
 ul#navTop{
     margin: 0;
     padding: 0;
     list-style: none;
-    width: 100%;
-    background-color: #585858;
+    width: 84%;
+    /* background-color: #585858; */
     float: left
 }
 ul#navTop li{
-    float: left
+    float: left;
+    background-color: #585858;
 }
+
 ul#navTop a{
     display: block;
     text-decoration: none;
@@ -43,6 +44,7 @@ ul#navTop a{
     line-height: 3em;
     background: url(../img/separador.png) repeat-y left top;
 }
+
 ul#navTop a:hover{
     background-color: #A4A4A4;
 }
@@ -53,7 +55,7 @@ ul#navTop a:hover{
 }
 
 /* Mostra o intem selecionado */
-.select{
+#navTop .select a {
     background-color: #A4A4A4; 
 }
     
@@ -66,6 +68,7 @@ ul#navTop a:hover{
     margin: 70px 0 30px 25px; 
     /* margin: 25px; */
     clear: both;/* Limpa o fluxo do float*/
+    z-index: -1;
 }
 
 
@@ -79,10 +82,12 @@ ul#navTop a:hover{
 
 /* Div conteúdo  */
 #Conteudo{
-    margin: 0 0.5em;
+    overflow-y: scroll;
+    margin: 40px 0.5em;
     border: 1px solid black;
-    float: right;
-    width: 87%;
+    left: 300px;
+    position: fixed;
+    width: 50%;
 }
 
 /* Div Rodapé */
