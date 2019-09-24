@@ -1,1 +1,2 @@
-background menu: criado um degrade com as cores #3f3f3f e #808080
+Cores usadas
+    #045FB4 -> active link
