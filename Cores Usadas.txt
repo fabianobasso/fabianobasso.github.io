@@ -1,2 +1,0 @@
-Cores usadas
-    #045FB4 -> active link
