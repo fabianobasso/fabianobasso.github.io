@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  background-color: #3F4041;
+  background-color: #404042;
+  color: #fbae41;
+  
+  /* Progres bar */
+  color: #B94A4A;
+
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.Icones-Contato{
+  /* <i class="icofont-location-pin"></i> */
+
+  /* <i class="icofont-brand-whatsapp"></i> */
+
+  /* <i class="icofont-email"></i> */
+
+  /* <i class="icofont-web"></i> */
+}
+
+.Icones-Rodapé{
+  /* <i class="icofont-linkedin"></i> */
+
+  /* <i class="icofont-facebook"></i> */
+
+  /* <i class="icofont-instagram"></i> */
+
+  /* <i class="icofont-twitter"></i> */
+}
