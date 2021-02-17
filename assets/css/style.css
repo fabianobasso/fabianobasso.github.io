@@ -1,4 +1,6 @@
 /* Configuração gerais */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -9,16 +11,26 @@ a{
   text-decoration: none;
 }
 
+.profile-title{
+  color: #fff;
+  border-bottom: 2px solid #fbae41;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
 /* Definindo o layout */
 body{
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 80px 1fr 120px;
+  grid-template-columns: 280px 1fr;
+  grid-template-rows: 64px 1fr 64px;
   grid-template-areas: 
-    "sidebar header"
+    "header header"
     "sidebar content"
     "sidebar footer";
   height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 /* Layout Responsivo */
 @media(max-width: 575px){
@@ -32,21 +44,184 @@ body{
     "footer";
   }
 }
+@media(max-width: 1366px){
+  
+  aside.sidebar .content-profile{
+    height: 100vh;
+    overflow: auto;
+  }
+  aside.sidebar .profile-img{
+    margin-top: 230px;
+  }
+}
 
+/* Header inicio */
 header.header{
   grid-area: header;
-  background-color: royalblue;
+  background-color: #3F4041;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* header.header .title{
+  width: 80%;
+} */
+header.header .title h2{
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.0rem;
+  margin-left: 28px;
+  
+}
+header.header .title h4{
+  color: #fbae41;
+  font-weight: 300;
+  font-size: 1.0rem;
+  margin-top: -15px;
+  margin-left: 28px;
+}
+header.header .nav{
+  height: 54px;
+}
+header.header .nav .nav-bar-social{
+  list-style: none;
+  
+}
+header.header .nav .nav-bar-social li{
+  display: inline;
+  width: 60px;
+  margin-top: 5px;
+  background-color: #EBEBEB;
+  padding: 10px;
+  float: left;
+  border: 1px solid #7a7a7a;
+  border-radius: 2px;
+}
+header.header .nav .card-right{
+  margin-left: 10px;
+  width: 38px;
+  height: 54px;
+}
+header.header .nav .card-left{
+  /* clear: both; */
+  margin-right: 20px;
+  width: 38px;
+  height: 54px;
+  background-color: brown;
+}
+header.header .nav .card-left img{
+  margin-left: -5px;
 }
 
+/* Header Fim */
+
+/* aside bar inicio */
 aside.sidebar{
   grid-area: sidebar;
-  background-color: salmon;
+  background-color: #3F4041;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 25px;
+  
 }
+aside.sidebar .content-profile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+aside.sidebar .content-profile::-webkit-scrollbar{
+  background-color: #EBEBEB;
+  width: 5px;
+}
+aside.sidebar .content-profile::-webkit-scrollbar-thumb{
+  background-color: #B94A4A;
+  /* height: 10px; */
+}
+
+aside.sidebar .profile-img {
+  display: flex;
+  justify-content: center;
+  height: 158px;
+}
+aside.sidebar .profile-img img{
+  width: 80%;
+  /* border: 2px solid #fff; */
+  border-radius: 5px;
+}
+aside.sidebar .profile-about{
+  width: 80%;
+}
+aside.sidebar .profile-about p{
+  font-size: 0.7rem;
+  color: #fff;
+}
+aside.sidebar .profile-contact{
+  width: 80%;
+}
+aside.sidebar .profile-contact .profile-info{
+  display: flex;
+  align-items: center;
+}
+aside.sidebar .profile-contact .profile-info span.text{
+  padding: 5px;
+  color: #fff;
+  font-size: 0.7rem;
+  line-height: 26px;
+}
+aside.sidebar .profile-contact .profile-info span.icon{
+  color: #fbae41;
+  font-size: 26px;
+  line-height: 26px;
+}
+aside.sidebar .profile-skills{
+  width: 80%;
+}
+aside.sidebar .progress-text{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+aside.sidebar .progress-text span{
+  color: #fff;
+  font-size: 0.7rem;
+}
+aside.sidebar .progress-skill{
+  background-color: #EBEBEB;
+  height: 10px;
+  border-radius: 5px;
+}
+aside.sidebar .progress-skill-porc{
+  background-color: #B94A4A;
+  height: 10px;
+  width: 90%;
+  border-radius: 5px;
+}
+aside.sidebar .progress-skill-porc.java{
+  width: 75%;
+}
+aside.sidebar .progress-skill-porc.php{
+  width: 80%;
+}
+aside.sidebar .progress-skill-porc.web{
+  width: 90%;
+}
+aside.sidebar .progress-skill-porc.sql{
+  width: 80%;
+}
+aside.sidebar .progress-skill-porc.flutter{
+  width: 60%;
+}
+/* aside bar fim */
 
 main.content{
   grid-area: content;
   background-color: slateblue;
 }
+
 
 footer.footer{
   grid-area: footer;

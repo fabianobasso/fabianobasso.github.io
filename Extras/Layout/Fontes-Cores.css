@@ -8,6 +8,19 @@
   /* Progres bar */
   color: #B94A4A;
 
+  /* box projeto */
+  background-color: #EEEBEB;
+  border-color: #D5D2D2;
+
+  /* Privado */
+  color: #FF0000;
+  /* Public */
+  color: #309330;
+  
+  /* btn zap */
+  color: #05CD51;
+
+
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,7 +35,7 @@
   /* <i class="icofont-web"></i> */
 }
 
-.Icones-Rodapé{
+.Icones-Header{
   /* <i class="icofont-linkedin"></i> */
 
   /* <i class="icofont-facebook"></i> */
@@ -30,4 +43,19 @@
   /* <i class="icofont-instagram"></i> */
 
   /* <i class="icofont-twitter"></i> */
+}
+
+.Icone-Rodape{
+  /* <i class="icofont-telegram"></i> */
+  /* <i class="icofont-file-document"></i> */
+}
+
+
+.Icones-Main{
+  /* <i class="icofont-file-python"></i> */
+  /* <i class="icofont-file-java"></i> */
+  /* <i class="icofont-file-html5"></i> */
+  /* <i class="icofont-file-php"></i> */
+  /* <i class="icofont-file-javascript"></i> */
+  /* <i class="icofont-file-css"></i> */
 }
