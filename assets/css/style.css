@@ -10,6 +10,9 @@ li{
     list-style: none;
     display: inline-block;
 }
+*{
+    box-sizing: border-box;
+}
 
 /* Divs main */
 .container-main{
@@ -18,6 +21,7 @@ li{
 }
 body {
     background: url(../img/bgBody.jpg);
+    /* overflow: hidden; */
 }
 
 .aside-menu{
@@ -128,17 +132,19 @@ footer div{
 }
 .content-main .logo-social{
     display: flex;
-    position: fixed;
+    /* position: fixed; */
     /* border: 1px solid #222; */
-    width: 70%;
+    width: 80%;
     height: 90px;
     justify-content: space-between;
+    margin: 0px auto;
 }
 
 .content-main .logo-social .social-links-container{
     display: flex;
     height: 100%;
     align-items: center;
+    
 }
 
 .content-main .logo-social .social-links-container{
@@ -199,5 +205,197 @@ footer div{
     font-size: 20px;
 }
 .content-main .menu{
-    margin-top: 100px;
+    /* margin-top: 150px; */
+    margin: 25px auto;
+    width: 80%;
+}
+.nav-item>a.active { 
+    background-color: #cf455c !important;
+    color: #fff !important; 
+    border-color: #cf455c !important;
+}
+
+.nav-item>a:hover{
+    border-color: #cf455c !important;
+    color: #000 !important;
+}
+.nav-item>a{
+    color: #383838 !important;
+}
+
+.content-portfolio{
+    margin: 10px auto;
+    width: 80%;
+    
+}
+
+.dropdown-menu {
+    width: 100% !important;
+    background-color: #fff !important;
+    padding: 0 !important;
+}
+
+.dropdown-item{
+    color: #000 !important;
+    height: 35px !important;
+}
+.dropdown-item:hover{
+    color: #fff !important;
+    background-color: #cf455c !important;
+}
+
+/* Resumo */
+.resume-content{
+    display: flex;
+    width: 100%;
+    /* padding: 15px; */
+}
+.content-left{
+    width: 50%;
+    padding: 15px;
+    background-color: #ededed;
+}
+.content-right{
+    width: 50%;
+    background: #1c1b1f;
+    padding: 15px;
+}
+
+.title-section{
+    background: #cf455c;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 6px 27px;
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.ex-box h2{
+    background: #cf455c;
+    color: #fff;
+    font-size: 17px;
+    line-height: 17px;
+    display: inline-block;
+    padding: 5px 21px;
+    font-weight: 600 !important;
+    border-radius: 50px;
+    letter-spacing: 1px;
+}
+
+.ex-box{
+    padding: 27px 27px 0px 27px;
+}
+
+.ex-box h4{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px 0 5px;
+}
+.ex-box p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #545454;
+}
+
+    /* .top-skills{
+        text-align: center;
+        padding: 40px;
+    } */
+.skill-name ul li{
+    width: 7px;
+    height: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    float: left;
+    margin-left: 5px;
+}
+.sn{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    width: 68px;
+    height: 68px;
+    border: 5px solid #cf455c;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 8px;
+
+}
+
+.top-skills{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 40px;
+    
+}
+.skill-name{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.skill-name ul{
+    margin-top: 5px;
+    margin-left: -15px;
+    width: 100%;
+}
+
+.skill{
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+.skill-title h4{
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    vertical-align: text-bottom;
+    padding-top: 12px;      
+}
+.skill-title{
+    width: 30%;
+}
+.progress-skill{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: flex-end;
+}
+.porc-skill{
+    height: 14px;
+}
+
+.porc-skill p{
+    font-size: 10px;
+    color: #fff;
+    
+}
+.progress-bar-skill{
+    width: 100%;
+    background-color: #ededed;
+    height: 14px;
+    border-radius: 4px;
+}
+.bar-skill{
+    height: 14px;
+    border-radius: 4px 0 0 4px;
+    background-color: #cf455c;
+}
+
+.title-section-right{
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
 }
