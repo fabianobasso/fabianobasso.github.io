@@ -1,0 +1,108 @@
+<div class="projects-content">
+    <div class="projects">
+
+        <div class="projects-box">
+            <a href="https://github.com/fabianobasso/Jogo_Mata_Mosquito" target="blank">
+                <img src="assets/img/projects/web/MataMosquito.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">Jogo Mata Mosquito</div>
+            <div class="project-description">
+                É um joguinho muito divertido que roda direto de um navegador de internet, O objetivo é eliminar todos os mosquitos 
+                que aparecem de forma aleatória na tela antes que o tempo acabe ou antes de perder seus pontos de vida.
+            </div>
+            <div class="project-tags">HTML5, BootStrap, javascript</div>
+                
+        </div>
+
+        <div class="projects-box">
+            <a id="ciranda-pizza">
+                <img src="assets/img/projects/web/CirandaPizza.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">Ciranda Pizza</div>
+            <div class="project-description">
+                Um sistema prático que integra atendimento de pedidos, cadastro de clientes, controle de caixa, entregadores e acompanhamento dos pedidos em tempo real
+            </div>
+            <div class="project-tags">HTML5, BootStrap, CSS3, JavaScript, PHP</div>
+        </div>
+
+        <div class="projects-box">
+            <a id="delta-gestao">
+                <img src="assets/img/projects/web/DeltaGestao.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">Delta Gestão</div>
+            <div class="project-description">
+                Uma solução web completa para gerenciamento do seu negócio, controle estoque, controle financeiro, venda de produtos, 
+                cadastro de novos produtos, caixa.
+            </div>
+            <div class="project-tags">HTML5, BootStrap, css3, JavaScript, mysql, php</div>
+        </div>
+
+
+        
+
+    </div>    
+
+    <nav aria-label="Navegação projeto web">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+            <a class="page-link" id="webant00" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" id="web1" href="">1</a></li>
+            <li class="page-item  active"><a class="page-link" id="web2" href="">2</a></li>
+            <li class="page-item"><a class="page-link" id="web3"  href="">3</a></li>
+            <li class="page-item">
+            <a class="page-link" href="#" id="webprox02">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+    
+<script>
+    $(document).ready(()=>{
+
+        // btn
+        $('#web1').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-00.html')  
+        })
+
+        $('#web2').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-01.html')  
+        })
+
+        $('#web3').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-02.html')  
+        })
+
+        // prox e ant paginação
+        $('#webant00').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-00.html')  
+        })
+        $('#webprox02').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-02.html')  
+        })
+
+        // Modal app prioritario
+        $('#ciranda-pizza').on('click', () =>{
+            $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
+        })
+        $('.modal-close-app').on('click', () =>{
+            $('.modal-contact').animate({'top': '-=510'},1500).fadeToggle(500)
+        })
+
+        $('#delta-gestao').on('click', () =>{
+            $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)
+            
+        })
+
+    })
+</script>

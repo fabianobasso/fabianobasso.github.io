@@ -14,6 +14,25 @@
 <body>
 
 
+    <div class="modal-contact">
+      <div class="modal-close-app">
+        &times;
+      </div>
+      <div class="modal-title-app">
+        <h4>Aviso Importante</h4>
+      </div>
+      <div class="modal-content-app">
+        <p>
+          Esse aplicativo é proprietário, ele não tem o código disponibilizado como os outros, 
+          e por isso ele é comercializado, e caso tenha algum interesse entrar em contato pelo QRCode.
+        </p>
+        
+      </div>
+      <div class="modal-qr">
+        <img src="assets/img/QRCode.png" width="200" height="200" alt="Contato whatsapp">
+      </div>
+    </div>
+
     <div class="container-main">
 
       <div class="aside-menu">
@@ -30,12 +49,17 @@
               Formado na área de desenvolvimento de sistemas, atuo no mercado como freelancer, oferecendo soluções 
               completas para sistemas web, mobile, desktop, sistemas integrados e eCommerce.
             </p>
-            <ul class="info-personal">
+            <p class="about">
+              Tenho experiência com as principais tecnologias para a criação de seu projeto, desde o mais simples até o mais avançado. 
+              No mundo mobile desenvolvo aplicativos nativos para Android. Acredito que cada projeto possui uma solução ideal, e resolver 
+              problemas com criatividade permite criar algo novo e único.
+            </p>
+            <!-- <ul class="info-personal">
               <li><i class="fas fa-map-marker-alt"></i> Campinas - SP</li>
               <li><i class="fas fa-at"></i> <a href="mailto:fabiano.basso.dev@gmail.com">fabiano.basso.dev@gmail.com</a></li>
               <li><i class="fas fa-globe"></i> <a href="https://fabianobasso.com.br">http://fabianobasso.com.br</a></li>
               <li><i class="fab fa-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=5519999979098"> (19) 9999-79098</a></li>
-            </ul>
+            </ul> -->
           </div>
         </div>
 
@@ -78,9 +102,9 @@
               <li class="nav-item dropdown" >
                 <a class="nav-link dropdown-toggle" id="projetos" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projetos</a>
                 <div class="dropdown-menu ">
-                  <a class="dropdown-item" href="#">Web</a>
-                  <a class="dropdown-item" href="#">Java</a>
-                  <a class="dropdown-item" href="#">Python</a>
+                  <a class="dropdown-item" id="web" href="">Web</a>
+                  <a class="dropdown-item"  id="java" href="">Java</a>
+
                 </div>
               </li>
               <li class="nav-item" >
@@ -91,238 +115,314 @@
           
           <div class="content-portfolio">
             
+            
             <div class="resume-content">
-                <div class="content-left">
-                  <div class="row">
-                    
-                    <div class="col-md-12">
-                      <h3 class="title-section">Experiência</h3> 
-                      
-                      
-                      <div class="ex-box">
-                        <h2>2018, Abril - 2018, Agosto </h2>
-                        <h4>Projeto App Delivery (Freelancer)</h4>
-                        <p>
-                            Um sistema prático que integra atendimento de pedidos, 
-                            cadastro de clientes, controle de caixa, entregadores e 
-                            acompanhamento dos pedidos em tempo real
-                        </p>
-                      </div>
-  
-                      <div class="ex-box">
-                          <h2>2019, Janeiro - 2020, Janeiro</h2>
-                          <h4>Desenvolvedor</h4>
-                          <p>
-                              Um contrato (PJ) em uma agência trabalhando no 
-                              desenvolvimento de sites, sistemas web e aplicativos mobile.
-                          </p>
-                      </div>
-  
-                      <div class="ex-box">
-                          <h2>2020, Março - 2020, Julho</h2>
-                          <h4>Projeto App Moto Entrega (Freelancer)</h4>
-                          <p>
-                              Sistema web, voltado para mercado de entrega de malotes de
-                              escritórios e mercadorias via motoboy
-                          </p>
-                      </div>
-  
-                      <div class="ex-box">
-                          <h2>2020, Agosto - 2020, Outubro</h2>
-                          <h4>Projeto Ponto Eletrônico (Freelancer)</h4>
-                          <p>
-                              Sistema web, para gerenciar a jornada de trabalho dos colaboradores 
-                              desde o registro do ponto até a gestão de forma prática
-                          </p>
-                      </div>
-                    </div>
-
-                    
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="title-section mt-2">Educação</h3>
-                        <div class="ex-box">
-                            <h2>2018 - 2020</h2>
-                            <h4>Análise e Desenvolvimento de Sistemas</h4>
-                            <p>
-                                Profissional que atua na análise e desenvolvimento de aplicações
-                                em software, para gerenciar, supervisionar, coordenar, elaborar, 
-                                desenvolver, implementar e testar projetos de sistema de informação.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-              </div>
-
-              <div class="content-right">
-                <div class="top-skills">
-                  <div class="skill-name">
-                      <div class="sn"><i class="fab fa-html5"></i></div>
-                  </div>
-
-                  <div class="skill-name">
-                      <div class="sn"><i class="fab fa-css3-alt"></i></div>
-                  </div>
-
-                  <div class="skill-name">
-                      <div class="sn"><i class="fab fa-js"></i></div>
-                  </div>
-
-                  <div class="skill-name">
-                      <div class="sn"><i class="fab fa-java"></i></div>
-                  </div>
-                </div>
-
+              <div class="content-left">
                 <div class="row">
+                  
                   <div class="col-md-12">
-                    <h3 class="title-section-right mt-2">Minhas Habilidades</h3>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>HTML 5</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>95%</p>
-                        </div>
-          
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 95%;"></div>
-                        </div>
-                      </div>
+                    <h3 class="title-section">Experiência</h3> 
+                    
+                    
+                    <div class="ex-box">
+                      <h2>2018, Abril - 2018, Agosto </h2>
+                      <h4>Projeto App Delivery (Freelancer)</h4>
+                      <p>
+                          Um sistema prático que integra atendimento de pedidos, 
+                          cadastro de clientes, controle de caixa, entregadores e 
+                          acompanhamento dos pedidos em tempo real
+                      </p>
                     </div>
-
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>CSS3</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>95%</p>
-                        </div>
           
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 95%;"></div>
-                        </div>
-                      </div>
+                    <div class="ex-box">
+                        <h2>2019, Janeiro - 2020, Janeiro</h2>
+                        <h4>Desenvolvedor</h4>
+                        <p>
+                            Um contrato (PJ) em uma agência trabalhando no 
+                            desenvolvimento de sites, sistemas web e aplicativos mobile.
+                        </p>
                     </div>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>BootStrap</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>95%</p>
-                        </div>
           
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 95%;"></div>
-                        </div>
-                      </div>
+                    <div class="ex-box">
+                        <h2>2020, Março - 2020, Julho</h2>
+                        <h4>Projeto App Moto Entrega (Freelancer)</h4>
+                        <p>
+                            Sistema web, voltado para mercado de entrega de malotes de
+                            escritórios e mercadorias via motoboy
+                        </p>
                     </div>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>JavaScript</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>95%</p>
-                        </div>
           
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 95%;"></div>
-                        </div>
-                      </div>
+                    <div class="ex-box">
+                        <h2>2020, Agosto - 2020, Outubro</h2>
+                        <h4>Projeto Ponto Eletrônico (Freelancer)</h4>
+                        <p>
+                            Sistema web, para gerenciar a jornada de trabalho dos colaboradores 
+                            desde o registro do ponto até a gestão de forma prática
+                        </p>
                     </div>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>PHP</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>95%</p>
-                        </div>
-          
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 95%;"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>Java</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>95%</p>
-                        </div>
-          
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 95%;"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>Python</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>85%</p>
-                        </div>
-          
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 85%;"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>SQL</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>85%</p>
-                        </div>
-          
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 85%;"></div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="skill">
-                      <div class="skill-title">
-                        <h4>Flutter</h4>
-                      </div>
-                      <div class="progress-skill">
-                        <div class="porc-skill">
-                          <p>65%</p>
-                        </div>
-          
-                        <div class="progress-bar-skill">
-                          <div class="bar-skill" style="width: 65%;"></div>
-                        </div>
-                      </div>
-                    </div>
-
-
                   </div>
-
+          
                   
                 </div>
-
+          
+                <div class="row">
+                  <div class="col-md-12">
+                      <h3 class="title-section mt-2">Educação</h3>
+                      <div class="ex-box">
+                          <h2>2018 - 2020</h2>
+                          <h4>Análise e Desenvolvimento de Sistemas</h4>
+                          <p>
+                              Profissional que atua na análise e desenvolvimento de aplicações
+                              em software, para gerenciar, supervisionar, coordenar, elaborar, 
+                              desenvolver, implementar e testar projetos de sistema de informação.
+                          </p>
+                      </div>
+                  </div>
               </div>
             </div>
+          
+            <div class="content-right">
+              <div class="top-skills">
+                <div class="skill-name">
+                    <div class="sn"><i class="fab fa-html5"></i></div>
+                </div>
+          
+                <div class="skill-name">
+                    <div class="sn"><i class="fab fa-css3-alt"></i></div>
+                </div>
+          
+                <div class="skill-name">
+                    <div class="sn"><i class="fab fa-js"></i></div>
+                </div>
+          
+                <div class="skill-name">
+                    <div class="sn"><i class="fab fa-java"></i></div>
+                </div>
+              </div>
+          
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="title-section-right mt-2">Minhas Habilidades</h3>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>HTML 5</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>95%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 95%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>CSS3</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>95%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 95%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>BootStrap</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>95%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 95%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>JavaScript</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>95%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 95%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>PHP</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>95%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 95%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>Java</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>95%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 95%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>Python</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>85%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 85%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>SQL</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>85%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 85%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+                  <div class="skill">
+                    <div class="skill-title">
+                      <h4>Flutter</h4>
+                    </div>
+                    <div class="progress-skill">
+                      <div class="porc-skill">
+                        <p>65%</p>
+                      </div>
+          
+                      <div class="progress-bar-skill">
+                        <div class="bar-skill" style="width: 65%;"></div>
+                      </div>
+                    </div>
+                  </div>
+          
+          
+                </div>
+          
+                <div class="col-md-12">
+                  <h3 class="title-section-right mt-5">Interesses</h3>
+          
+                  <div class="interests">
+          
+                    <div class="interests-box">
+                      <div class="interests-icons">
+                        <i class="fa fa-plane fa-lg"></i>
+                        <br>
+                        Viajar
+                      </div>
+                    </div>
+          
+                    <div class="interests-box">
+                      <div class="interests-icons">
+                        <i class="fa fa-headphones fa-lg"></i>
+                        <br>
+                        Música
+                      </div>
+                    </div>
+          
+                    <div class="interests-box">
+                      <div class="interests-icons">
+                        <i class="fa fa-file-video fa-lg"></i>
+                        <br>
+                        Vídeos
+                      </div>
+                    </div>
+          
+                    <div class="interests-box">
+                      <div class="interests-icons">
+                        <i class="fas fa-book fa-lg"></i>
+                        <br>
+                        Leitura
+                      </div>
+                    </div>
+          
+                    <div class="interests-box">
+                      <div class="interests-icons">
+                        <i class="fas fa-utensils fa-lg"></i>
+                        <br>
+                        Cozinhar
+                      </div>
+                    </div>
+          
+                    <div class="interests-box">
+                      <div class="interests-icons">
+                        <i class="fas fa-running fa-lg"></i>
+                        <br>
+                        Esportes
+                      </div>
+                    </div>
+          
+                    <div class="interests-box">
+                      <div class="interests-icons">
+                        <i class="fas fa-film fa-lg"></i>
+                        <br>
+                        Filmes
+                      </div>
+                    </div>
+          
+                  </div>
+          
+                </div>
+          
+                <div class="col-md-12 mt-4">
+                  <div class="qr">
+                    <div class="qr-background">
+                      <img src="assets/img/QRCode.png" alt="whatsapp" width="200" height="200">
+                    </div>
+                  </div>
+                </div>
+          
+                
+              </div>
+          
+            </div>
+          </div>
+            
+            
             
           </div>
 

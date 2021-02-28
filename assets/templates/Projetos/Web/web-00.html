@@ -1,0 +1,92 @@
+<div class="projects-content">
+    <div class="projects">
+
+        <div class="projects-box">
+            <a href="https://github.com/fabianobasso/Dashboard" target="blank">
+                <img src="assets/img/projects/web/dashboard.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">Dashboard</div>
+            <div class="project-description">
+                Um projeto simples que recupera os dados de um banco de dados usando 
+                sqlite3 e mostra os dados de forma programática na tela da dashboard.
+            </div>
+            <div class="project-tags">HTML5, BootStrap, Jquery</div>
+                
+        </div>
+
+        <div class="projects-box">
+            <a href="https://github.com/fabianobasso/Help_Desk" target="blank">
+                <img src="assets/img/projects/web/helpDesk.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">Help Desk</div>
+            <div class="project-description">
+                Um projeto de aplicativo web para área de suporte técnico de informática de empresas. 
+                Com ele se torna mais fácil a abertura de chamados para o pessoal do TI da empresa.
+            </div>
+            <div class="project-tags">HTML5, BootStrap, CSS3, JavaScript, PHP</div>
+        </div>
+
+        <div class="projects-box">
+            <a href="https://github.com/fabianobasso/Orcamento_Pessoal" target="blank">
+                <img src="assets/img/projects/web/OrcamentoPessoal.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">Orçamento Pessoal</div>
+            <div class="project-description">
+                Um app de controle financeiro, neste projeto o back end da aplicação foi feito usando a 
+                linguagem javascript o armazenamento das informação e feita com o recurso do navegador Local Storage
+            </div>
+            <div class="project-tags">HTML5, BootStrap, JavaScript, LocalStorage</div>
+        </div>
+
+
+        
+
+    </div>    
+
+    <nav aria-label="Navegação projeto web">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item active"><a class="page-link" id="web1" href="">1</a></li>
+            <li class="page-item"><a class="page-link" id="web2" href="">2</a></li>
+            <li class="page-item"><a class="page-link" id="web3" href="">3</a></li>
+            <li class="page-item">
+            <a class="page-link" id="webprox01">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+    
+<script>
+    $(document).ready(()=>{
+
+        // btn paginação
+        $('#web1').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-00.html')  
+        })
+
+        $('#web2').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-01.html')  
+        })
+        $('#web3').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-02.html')  
+        })
+
+        // prox paginação
+
+        $('#webprox01').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-01.html')  
+        })
+
+    })
+</script>

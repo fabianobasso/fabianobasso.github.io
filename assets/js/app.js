@@ -8,7 +8,7 @@ $(document).ready(() =>{
     $('#resumo').on('click', e =>{
         $(e.target).addClass('active')
         removeActive(['#projetos', '#contato'])
-        
+        $('.content-portfolio').load('assets/templates/resumo.html')
     })
 
     $('#projetos').on('click', e =>{
@@ -19,7 +19,21 @@ $(document).ready(() =>{
     $('#contato').on('click', e =>{
         $(e.target).addClass('active')
         removeActive(['#projetos', '#resumo'])
+        $('.content-portfolio').load('assets/templates/contato.html')
     })
+
+    // Load pages projects
+
+    $('#web').on('click', e => {
+        e.preventDefault()
+        $('.content-portfolio').load('assets/templates/Projetos/Web/web-00.html')
+    })
+    $('#java').on('click', e => {
+        e.preventDefault()
+        $('.content-portfolio').load('assets/templates/Projetos/Java/java-00.html')
+    })
+    
+    
 
     //Fuction remove class active
     function removeActive(classes = [], className = 'active'){
