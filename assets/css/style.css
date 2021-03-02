@@ -644,3 +644,8 @@ form textarea{
 #load-email{
     display: none;
 }
+
+.msg-errors,
+.msg-success{
+    display: none;
+}

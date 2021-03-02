@@ -39,18 +39,25 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text tm">Assunto</span>
                     </div>
-                    <input type="text" class="form-control" name="name">
+                    <input type="text" class="form-control" name="subject">
                 </div>
 
-                <textarea name="mensagem" id="" cols="50" rows="7" class="textarea" placeholder="Escreva sua mensagem aqui..."></textarea>
+                <textarea name="message" id="" cols="50" rows="7" class="textarea" placeholder="Escreva sua mensagem aqui..."></textarea>
 
+                <div class="alert alert-danger mt-3 msg-errors" role="alert">
+                    
+                </div> 
+                <div class="alert alert-success mt-3 msg-success" role="alert">
+                    
+                </div> 
 
+                <input type="text" name="platform" value="2" hidden>
 
                 <button id="send-email" class="button mt-3" >Enviar sua mensagem</button>
                 <button id="load-email" class="btn btn-color mt-3" type="button" disabled>
                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                     Enviando...
-                </button>  
+                </button> 
             </form>
         </div>
     </div>
@@ -60,6 +67,8 @@
 <script>
     $('#send-email').on('click', e =>{
         e.preventDefault()
+        $('.msg-errors').hide().html('')
+        $('.msg-success').hide().html('')
         let dataForm = $('#form-msg').serialize()
         $('#load-email').show()
         $(e.target).hide()
@@ -67,8 +76,27 @@
             type: 'POST',
             url: 'https://www.fabianobasso.xyz/apps/sendMSG/createMsg.php',
             data: dataForm,
+            dataType: 'JSON',
             success: data => {
                 console.log(data)
+                if(data.inputs == false){
+                    $('.msg-errors').show().html('Por favor preencher todos os campos antes de enviar mensagem.')
+                }
+                if(data.name == false){
+                    $('.msg-errors').show().html('Nome invalido, deve ser igual ou maior que 3 caracteres.')
+                }
+                if(data.email == false){
+                    $('.msg-errors').show().html('Email invalido, exemplo: exemplo@seudominio.com.')
+                }
+                if(data.success == true){
+                    $('.msg-success').show().html('Mensagem enviada com sucesso')
+                    setTimeout(() =>{
+                        $('.msg-success').hide().html('')
+                    }, 2000)
+                }
+                if(data.messagem == false){
+                    $('.msg-errors').show().html('Mensagem não pode ser enviada tentar novamente em alguns minutos.')
+                }
                 $('#load-email').hide()
                 $(e.target).show()
             },
