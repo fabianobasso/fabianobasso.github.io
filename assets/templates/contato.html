@@ -78,7 +78,6 @@
             data: dataForm,
             dataType: 'JSON',
             success: data => {
-                console.log(data)
                 if(data.inputs == false){
                     $('.msg-errors').show().html('Por favor preencher todos os campos antes de enviar mensagem.')
                 }
