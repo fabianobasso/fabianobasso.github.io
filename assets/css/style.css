@@ -543,6 +543,25 @@ footer div{
     background-color: #999;
 }
 
+.modal-wathsapp a{
+    text-decoration: none;
+    text-align: center;
+    
+}
+.modal-wathsapp a i{
+    color: #FFF;
+    font-size: 60px;
+}
+.modal-wathsapp{
+    width: 60px;
+    height: 60px;
+    background-color: #4ced69;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+
 /* Contact */
 
 .contact{
@@ -648,4 +667,99 @@ form textarea{
 .msg-errors,
 .msg-success{
     display: none;
+}
+
+
+
+/* responsive site */
+@media (max-width: 575.98px) { 
+    .container-main{
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .aside-menu{
+        position: unset;
+        width: 100%;
+        height: unset;
+    }
+    .content-main{
+        margin: unset;
+        padding: 10px;
+        width: 100%;
+    }
+    
+    .mobile-nav{
+        display: none;
+    }
+    
+    .content-portfolio{
+        width: 100%;
+    }
+    .content-main .menu{
+        padding-top: 10px;
+        width: 100%;
+    }
+    .menu-2{
+        width: 100%;
+    }
+    .nav-item>a{
+        font-size: 16px !important;
+    }
+
+    .resume-content{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .content-left{
+        width: 100%;
+    }
+    .content-right{
+        width: 100%;
+    }
+    .qr{
+        display: none;
+    }
+    .interests{
+        justify-content: center;
+    }
+    .modal-qr{
+        display: none;
+    }
+    .modal-wathsapp{
+        display: inline-block;
+        margin-top: 15px;
+        
+        
+    }
+    .modal-contact{
+        top: 720px;
+        width: 80%;
+        
+    }
+    .modal-mobile{
+        height: 90px;
+        width: 100%;
+        background-color: #999;
+        text-align: center;
+        
+    }
+    .modal-close-app{
+        position: relative;
+        top: 5px;
+        left: 90%;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-info{
+        width: 100%;
+    }
+    .contact-msg{
+        margin-top: 30px;
+        width: 100%;
+    }
+
 }

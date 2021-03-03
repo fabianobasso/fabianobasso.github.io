@@ -92,16 +92,35 @@
         })
 
         // Modal app prioritario
-        $('#ciranda-pizza').on('click', () =>{
-            $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
+        $('#ciranda-pizza').on('click', e =>{
+            if($(window).width() > 800){
+                $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
+            }else{
+                let top = $(e.target).position().top
+                $('.modal-contact').fadeToggle(500).animate({'top': top},1000)
+            }
+                
+            
+            
         })
         $('.modal-close-app').on('click', () =>{
-            $('.modal-contact').animate({'top': '-=510'},1500).fadeToggle(500)
+            if($(window).width() > 800){
+                $('.modal-contact').animate({'top': '-=510'},1500).fadeToggle(500)    
+            }else{
+                $('.modal-contact').animate({'top': '720'},1500).fadeToggle(500)
+            }
+
+            
+            
         })
 
-        $('#delta-gestao').on('click', () =>{
-            $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)
-            
+        $('#delta-gestao').on('click', e =>{
+            if($(window).width() > 800){
+                $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
+            }else{
+                let top = $(e.target).position().top
+                $('.modal-contact').fadeToggle(500).animate({'top': top},1000)
+            }
         })
 
     })

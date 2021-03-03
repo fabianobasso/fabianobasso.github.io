@@ -86,20 +86,39 @@
         })
 
         // Modal app prioritario
-        $('#finans').on('click', () =>{
-            $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
-        })
-        $('#lucas-entregas').on('click', () =>{
-            $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)
+        $('#finans').on('click', e =>{
+            if($(window).width() > 800){
+                $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
+            }else{
+                let top = $(e.target).position().top
+                $('.modal-contact').fadeToggle(500).animate({'top': top},1000)
+            }
             
         })
-        $('#ponto-eletronico').on('click', () =>{
-            $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)
-            
+        $('#lucas-entregas').on('click', e =>{
+            if($(window).width() > 800){
+                $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
+            }else{
+                let top = $(e.target).position().top
+                $('.modal-contact').fadeToggle(500).animate({'top': top},1000)
+            }
+        })
+        $('#ponto-eletronico').on('click', e =>{
+            if($(window).width() > 800){
+                $('.modal-contact').fadeToggle(500).animate({'top': '+=510'},1000)    
+            }else{
+                let top = $(e.target).position().top
+                $('.modal-contact').fadeToggle(500).animate({'top': top},1000)
+            }
         })
 
         $('.modal-close-app').on('click', () =>{
-            $('.modal-contact').animate({'top': '-=510'},1500).fadeToggle(500)
+            if($(window).width() > 800){
+                $('.modal-contact').fadeToggle(500).animate({'top': '-=510'},1000)    
+            }else{
+                $('.modal-contact').fadeToggle(500).animate({'top': '720'},1000)
+            }
+            
         })
 
 

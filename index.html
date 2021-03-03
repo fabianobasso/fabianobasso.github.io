@@ -24,13 +24,19 @@
       <div class="modal-content-app">
         <p>
           Esse aplicativo é proprietário, ele não tem o código disponibilizado como os outros, 
-          e por isso ele é comercializado, e caso tenha algum interesse entrar em contato pelo QRCode.
+          e por isso ele é comercializado, e caso tenha algum interesse entrar em contato pelo whatsapp.
         </p>
         
       </div>
       <div class="modal-qr">
         <img src="assets/img/QRCode.png" width="200" height="200" alt="Contato whatsapp">
       </div>
+      <div class="modal-mobile">
+        <div class="modal-wathsapp">
+          <a href="https://api.whatsapp.com/send?phone=5519999979098" target="blank"><i class="fab fa-whatsapp""></i></a>
+        </div>
+      </div>
+      
     </div>
 
     <div class="container-main">
@@ -67,48 +73,57 @@
       </div>
 
       <div class="content-main">
-        <header>
-          <div class="logo-social">
-            <div class="logo">
-              <h3>Fabiano Basso</h3>
-              <h4>Desenvolvedor Full Stack</h4>
-            </div>
-  
-            <div class="social-links-container">
-              <div class="social-link">
-                <ul>
-                  <li><a href="https://www.linkedin.com/in/fabiano-basso" target="blank"><i class="fab fa-linkedin""></i></a></li>
-                  <li><a href="https://www.facebook.com/fabiano.basso.83/" target="blank"><i class="fab fa-facebook""></i></a></li>
-                  <li><a href="https://twitter.com/fabianobasso11" target="blank"><i class="fab fa-twitter""></i></a></li>
-                  <li><a href="https://api.whatsapp.com/send?phone=5519999979098" target="blank"><i class="fab fa-whatsapp""></i></a></li>
-                  <li><a href="https://fabianobasso.github.io/" target="blank"><i class="fab fa-github""></i></a></li>
-                </ul>
-              </div>
-              <div class="btn-social">
-                <button id="social-links-open" class="btn-social-bt"><i class="fas fa-share-alt"></i></button>
-              </div>
-            </div>  
-          </div>
+        <header class="mobile">
           
-          <div class="menu">
-            <ul class="nav nav-tabs border-danger justify-content-center nav-justified">
-              <li class="nav-item" >
-                <a class="nav-link active" href="#" id="resumo">Resumo</a>
-              </li>
-              <li class="nav-item dropdown" >
-                <a class="nav-link dropdown-toggle" id="projetos" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projetos</a>
-                <div class="dropdown-menu ">
-                  <a class="dropdown-item" id="web" href="">Web</a>
-                  <a class="dropdown-item"  id="java" href="">Java</a>
-
+          <div class="mobile-nav">
+            <div class="logo-social">
+              <div class="logo">
+                <h3>Fabiano Basso</h3>
+                <h4>Desenvolvedor Full Stack</h4>
+              </div>
+    
+              <div class="social-links-container">
+                <div class="social-link">
+                  <ul>
+                    <li><a href="https://www.linkedin.com/in/fabiano-basso" target="blank"><i class="fab fa-linkedin""></i></a></li>
+                    <li><a href="https://www.facebook.com/fabiano.basso.83/" target="blank"><i class="fab fa-facebook""></i></a></li>
+                    <li><a href="https://twitter.com/fabianobasso11" target="blank"><i class="fab fa-twitter""></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5519999979098" target="blank"><i class="fab fa-whatsapp""></i></a></li>
+                    <li><a href="https://fabianobasso.github.io/" target="blank"><i class="fab fa-github""></i></a></li>
+                  </ul>
                 </div>
-              </li>
-              <li class="nav-item" >
-                <a class="nav-link" id="contato" href="#">Contato</a>
-              </li>
-            </ul>  
+                <div class="btn-social">
+                  <button id="social-links-open" class="btn-social-bt"><i class="fas fa-share-alt"></i></button>
+                </div>
+              </div>  
+            </div>
+
           </div>
+
+          <div class="menu">
+            <div class="desktop">
+              <ul class="nav nav-tabs border-danger justify-content-center nav-justified">
+                <li class="nav-item" >
+                  <a class="nav-link active" href="#" id="resumo">Resumo</a>
+                </li>
+                <li class="nav-item dropdown" >
+                  <a class="nav-link dropdown-toggle" id="projetos" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projetos</a>
+                  <div class="dropdown-menu ">
+                    <a class="dropdown-item" id="web" href="">Web</a>
+                    <a class="dropdown-item"  id="java" href="">Java</a>
+  
+                  </div>
+                </li>
+                <li class="nav-item" >
+                  <a class="nav-link" id="contato" href="#">Contato</a>
+                </li>
+              </ul>
+            </div>
+              
+          </div>
+
           
+      
           <div class="content-portfolio">
             
             
@@ -423,6 +438,8 @@
           </div>
 
         </header>
+
+        
       </div>
 
     </div>
