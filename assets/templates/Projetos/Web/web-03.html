@@ -1,0 +1,89 @@
+<div class="projects-content">
+    <div class="projects">
+
+        <div class="projects-box">
+            <a href="https://github.com/fabianobasso/todo_list" target="blank">
+                <img src="assets/img/projects/web/todoList.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">To Do List</div>
+            <div class="project-description">
+                Um app bem minimalista porque faz somente o necessário que é gerenciar suas tarefas do dia a dia, 
+                consegue criar, editar, apagar ou marcar como concluída suas tarefas.
+            </div>
+            <div class="project-tags">HTML5, BootStrap, javascript, PHP, sqlite3</div>
+                
+        </div>
+
+        <!-- <div class="projects-box">
+            <a id="lucas-entregas">
+                <img src="assets/img/projects/web/lucasentregas.png" alt="" width="300" height="200">
+            </a>
+            <div class="more">Veja Mais</div>
+            <div class="project-title">App Moto Entrega</div>
+            <div class="project-description">
+                Sistema web, voltado para mercado de entrega de malotes de escritórios e mercadorias via motoboy
+            </div>
+            <div class="project-tags">HTML5, BootStrap, CSS3, JavaScript, PHP</div>
+        </div> -->
+
+        
+
+
+        
+
+    </div>    
+
+    <nav aria-label="Navegação projeto web">
+        <ul class="pagination justify-content-center">
+            <li class="page-item">
+            <a class="page-link" id="webant02" tabindex="-1">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" id="web1" href="">1</a></li>
+            <li class="page-item"><a class="page-link" id="web2" href="">2</a></li>
+            <li class="page-item"><a class="page-link" id="web3"  href="">3</a></li>
+            <li class="page-item active"><a class="page-link" id="web4"  href="">4</a></li>
+            <li class="page-item disabled">
+            <a class="page-link " href="#">Próximo</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+
+    
+<script>
+    $(document).ready(()=>{
+
+        // btn
+        $('#web1').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-00.html')  
+        })
+
+        $('#web2').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-01.html')  
+        })
+
+        $('#web3').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-02.html')  
+        })
+
+        $('#web4').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-03.html')  
+        })
+
+        // prox e ant paginação
+        $('#webant02').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-02.html')  
+        })
+
+        // Modal app prioritario
+        
+
+    })
+</script>

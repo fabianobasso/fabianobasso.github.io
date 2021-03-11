@@ -51,8 +51,9 @@
             <li class="page-item"><a class="page-link" id="web1" href="">1</a></li>
             <li class="page-item"><a class="page-link" id="web2" href="">2</a></li>
             <li class="page-item active"><a class="page-link" id="web3"  href="">3</a></li>
-            <li class="page-item disabled">
-            <a class="page-link " href="#">Próximo</a>
+            <li class="page-item"><a class="page-link" id="web4"  href="">4</a></li>
+            <li class="page-item">
+            <a class="page-link " href="#" id="webprox03">Próximo</a>
             </li>
         </ul>
     </nav>
@@ -79,10 +80,20 @@
             $('.content-portfolio').load('assets/templates/Projetos/Web/web-02.html')  
         })
 
+        $('#web4').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-03.html')  
+        })
+
         // prox e ant paginação
         $('#webant02').on('click', e => {
             e.preventDefault()
-            $('.content-portfolio').load('assets/templates/Projetos/Web/web-02.html')  
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-01.html')  
+        })
+
+        $('#webprox03').on('click', e => {
+            e.preventDefault()
+            $('.content-portfolio').load('assets/templates/Projetos/Web/web-03.html')  
         })
 
         // Modal app prioritario
