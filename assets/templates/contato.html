@@ -74,8 +74,9 @@
         $(e.target).hide()
         $.ajax({
             type: 'POST',
-            url: 'https://www.fabianobasso.xyz/apps/sendMSG/createMsg.php',
-            data: dataForm,
+            // url: 'http://appsfabiano/apps/sendMSG/message.php',
+            url: 'https://www.fabianobasso.xyz/apps/sendMSG/message.php',
+            data: 'action=newMessage&' + dataForm,
             dataType: 'JSON',
             success: data => {
                 if(data.inputs == false){
