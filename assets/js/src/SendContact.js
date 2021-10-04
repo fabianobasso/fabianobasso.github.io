@@ -73,7 +73,7 @@ export default class SendContact {
         const alertMSG = document.querySelector('.alert-msg')
         alertMSG.classList.add('alert-danger')
         $('.alert-msg').slideDown(500)
-        alertMSG.innerHTML = 'Tente novamente mais tarde 222'
+        alertMSG.innerHTML = 'Tente novamente mais tarde'
         setTimeout(() => {
             $('.alert-msg').slideUp(500)
             SendContact.cleanAlertMSG(alertMSG)
