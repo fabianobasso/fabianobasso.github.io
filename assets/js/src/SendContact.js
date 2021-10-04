@@ -1,7 +1,7 @@
 export default class SendContact {
     constructor(form) {
         this.data = this.setData(form)
-        this.url = 'http://www.bassosv.xyz/send_contact'
+        this.url = 'https://bassosv.xyz:8443/send_contact'
         this.alertMSG = document.querySelector('.alert-msg')
     }
 
