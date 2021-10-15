@@ -365,8 +365,8 @@ p {
 
   .two__img .img__2,
   .two__img .img__1 {
-    width        : 350px !important;
-    height       : 350px !important;
+    width        : 100px !important;
+    height       : 100px !important;
     margin       : 0px auto;
     margin-bottom: 25px;
   }
